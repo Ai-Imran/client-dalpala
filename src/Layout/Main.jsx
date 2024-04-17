@@ -4,7 +4,8 @@ const Main = () => {
     return (
         <div>
             <Navbar/>
-            <Outlet/>
+            <div className="max-w-screen-lg mx-auto"><Outlet/></div>
+            
         </div>
     );
 };
