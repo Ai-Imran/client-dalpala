@@ -1,8 +1,9 @@
 import { Link, NavLink } from 'react-router-dom';
 import './style.css'
-import dalpala from '../assets/dalpala.png'
+import dalpala from '../assets/dal1.png'
 import { FaSearch, FaUser } from "react-icons/fa";
 import { RiMenuFoldLine } from "react-icons/ri";
+import SearchButton from '../Components/SearchButton';
 
 const Navbar = () => {
     return (
@@ -32,18 +33,13 @@ const Navbar = () => {
           </ul>
              </div>
             </div>
-              <Link to={'/'} className='flex gap-2  items-center '> 
-                    <img className='w-[50px] ' src={dalpala} alt="dalapla-logo" />
+              <Link to={'/'} className='flex  gap-2  items-center '> 
+                    <img className='w-[50px] opacity-65' src={dalpala} alt="dalapla-logo" />
                     <h1 className='font-bold hover:text-lime-200 lg:text-3xl text-2xl'>Dalpala</h1>
                     </Link> 
                               
                 </div>
-                <div className="hidden">
-                <label className=" flex items-center bg-blue-700 pr-4 rounded-r-md  gap-2">
-                       <input type="text" className="outline-none px-2 py-2 rounded rounded-r-none focus:border-blue-700 focus:border-2 text-black " placeholder='search product' />
-                       <FaSearch className='ml-1 border-blue-700  text-2xl'/>
-                    </label>
-                </div>
+                <SearchButton/>
                 <div className="lg:hidden gap-2 flex ml-[70px]">
                 <FaUser className='text-2xl'/>   
                 <div className=' flex font-bold flex-col'>
@@ -53,7 +49,7 @@ const Navbar = () => {
                 </div>
                 
                 <div className="navbar-center  hidden lg:flex">                   
-                    <ul className="menu  font-bold text-[18px] space-x-4 px-4 menu-horizontal ">
+                    <ul className="menu  font-bold text-[18px] space-x-4 px-4 menu-horizontal">
                         <NavLink to={'/'}>Home</NavLink>
                         <NavLink to={'/shops'}>Shop Now</NavLink>
                         <NavLink to={'/login'}>Login</NavLink>
