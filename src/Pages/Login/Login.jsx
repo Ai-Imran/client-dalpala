@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
+import { Helmet } from "react-helmet-async";
 
 const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
@@ -46,6 +47,9 @@ const Login = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Dalpala | Login</title>
+            </Helmet>
             <h3 className="lg:text-4xl font-bold text-center mx-auto bg-gray-600 text-white py-3 lg:mt-16 lg:py-6">Login Now</h3>
             <form onSubmit={handleSubmit} className="border px-2 w-full pb-6 mb-10">
                 <p className="lg:w-3/4 mx-auto  pt-6">Please login if you are a registered customer

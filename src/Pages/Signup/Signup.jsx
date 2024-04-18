@@ -2,6 +2,7 @@ import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Providers/AuthProvider";
 import { sendEmailVerification } from "firebase/auth";
+import { Helmet } from "react-helmet-async";
 
 const Signup = () => {
 
@@ -46,6 +47,9 @@ const Signup = () => {
     }
     return (
         <div>
+            <Helmet>
+                <title>Dalpala | Signup</title>
+            </Helmet>
             <h3 className="lg:text-4xl font-bold text-center mx-auto bg-gray-600 text-white py-3 lg:mt-16 lg:py-6">Create an Account</h3>
             <form onSubmit={handleSubmit} className="border px-2 w-full pb-6 mb-10">
 
