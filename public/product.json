@@ -1,0 +1,106 @@
+[
+    {
+        "Product_id": "P001",
+        "name": "Alex Azabache",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+        "image": "https://i.ibb.co/0FTLW4k/alex-azabache.jpg",
+        "brand": "Brand A",
+        "stock_quality": 10
+    },
+    {
+        "Product_id": "P002",
+        "name": "Cierra Henderson",
+        "description": "Nulla facilisi. Sed auctor varius velit, et tristique nulla facilisi.",
+        "image": "https://i.ibb.co/BjS0nFP/Cierra-Henderson.jpg",
+        "brand": "Brand B",
+        "stock_quality": 15
+    },
+    {
+        "Product_id": "P003",
+        "name": "Daniel Korpai",
+        "description": "Vivamus tempor purus id quam lacinia, vel lobortis purus sollicitudin.",
+        "image": "https://i.ibb.co/PFLrhqh/daniel-korpaijpg.jpg",
+        "brand": "Brand C",
+        "stock_quality": 20
+    },
+    {
+        "Product_id": "P004",
+        "name": "Domino",
+        "description": "Donec nec convallis libero, et molestie nisi.",
+        "image": "https://i.ibb.co/jzc7hxG/domino-164jpg.jpg",
+        "brand": "Brand D",
+        "stock_quality": 8
+    },
+    {
+        "Product_id": "P005",
+        "name": "Ethan Rougon",
+        "description": "Fusce at accumsan odio. Nunc vel purus mi.",
+        "image": "https://i.ibb.co/d7GFmRG/ethan-rougon-w-H63-OABr-R4-E-unsplash.jpg",
+        "brand": "Brand E",
+        "stock_quality": 12
+    },
+    {
+        "Product_id": "P006",
+        "name": "Istockphoto 1",
+        "description": "Phasellus condimentum nisi id libero vehicula, ac vehicula leo ultrices.",
+        "image": "https://i.ibb.co/S0BT7BL/istockphoto-516646920-612x612.jpg",
+        "brand": "Brand F",
+        "stock_quality": 25
+    },
+    {
+        "Product_id": "P007",
+        "name": "Istockphoto 2",
+        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+        "image": "https://i.ibb.co/bvN558L/istockphoto-890151396-612x612.jpg",
+        "brand": "Brand G",
+        "stock_quality": 18
+    },
+    {
+        "Product_id": "P008",
+        "name": "Istockphoto 3",
+        "description": "Vestibulum suscipit odio vitae quam aliquam, at commodo quam cursus.",
+        "image": "https://i.ibb.co/vYTmyY6/istockphoto-1455502427-612x612.jpg",
+        "brand": "Brand H",
+        "stock_quality": 30
+    },
+    {
+        "Product_id": "P009",
+        "name": "Kiran CK",
+        "description": "Duis sodales, sapien quis vehicula bibendum, leo odio malesuada dui, a eleifend odio felis et quam.",
+        "image": "https://i.ibb.co/T1T0CKr/kiran-ck.jpg",
+        "brand": "Brand I",
+        "stock_quality": 5
+    },
+    {
+        "Product_id": "P010",
+        "name": "PMV Chamara",
+        "description": "Proin tincidunt dictum convallis.",
+        "image": "https://i.ibb.co/L8kdSM5/pmv-chamara.jpg",
+        "brand": "Brand J",
+        "stock_quality": 14
+    },
+    {
+        "Product_id": "P011",
+        "name": "Tyler Nix",
+        "description": "Aliquam congue bibendum arcu ut consequat.",
+        "image": "https://i.ibb.co/XCWnmW3/tyler-nix.jpg",
+        "brand": "Brand K",
+        "stock_quality": 22
+    },
+    {
+        "Product_id": "P012",
+        "name": "Tyler Nix",
+        "description": "Praesent ultrices eget nunc a viverra.",
+        "image": "https://i.ibb.co/JzG2KVT/tyler-nix.jpg",
+        "brand": "Brand L",
+        "stock_quality": 7
+    },
+    {
+        "Product_id": "P013",
+        "name": "Wiser By The Mile",
+        "description": "Sed posuere, tortor id dapibus sodales, enim tortor facilisis arcu, sit amet lacinia lorem nibh a ante.",
+        "image": "https://i.ibb.co/HdVpmG0/wiser-by-the-milejpg.jpg",
+        "brand": "Brand M",
+        "stock_quality": 17
+    }
+]
