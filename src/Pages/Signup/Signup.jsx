@@ -41,6 +41,7 @@ const Signup = () => {
             updateUserProfile(name)
             sendEmailVerification(res.user)
             navigate(from, { replace: true });
+            window.location.reload();
 
         })
         .catch(err => console.log(err))

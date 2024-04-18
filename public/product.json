@@ -5,7 +5,7 @@
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         "image": "https://i.ibb.co/0FTLW4k/alex-azabache.jpg",
         "brand": "Brand A",
-        "stock_quality": 10
+        "price": 84.60
     },
     {
         "Product_id": "P002",
@@ -13,7 +13,7 @@
         "description": "Nulla facilisi. Sed auctor varius velit, et tristique nulla facilisi.",
         "image": "https://i.ibb.co/BjS0nFP/Cierra-Henderson.jpg",
         "brand": "Brand B",
-        "stock_quality": 15
+        "price": 84.60
     },
     {
         "Product_id": "P003",
@@ -21,7 +21,7 @@
         "description": "Vivamus tempor purus id quam lacinia, vel lobortis purus sollicitudin.",
         "image": "https://i.ibb.co/PFLrhqh/daniel-korpaijpg.jpg",
         "brand": "Brand C",
-        "stock_quality": 20
+        "price": 843.60
     },
     {
         "Product_id": "P004",
@@ -29,7 +29,7 @@
         "description": "Donec nec convallis libero, et molestie nisi.",
         "image": "https://i.ibb.co/jzc7hxG/domino-164jpg.jpg",
         "brand": "Brand D",
-        "stock_quality": 8
+        "price": 834.60
     },
     {
         "Product_id": "P005",
@@ -37,7 +37,7 @@
         "description": "Fusce at accumsan odio. Nunc vel purus mi.",
         "image": "https://i.ibb.co/d7GFmRG/ethan-rougon-w-H63-OABr-R4-E-unsplash.jpg",
         "brand": "Brand E",
-        "stock_quality": 12
+        "price": 54.60
     },
     {
         "Product_id": "P006",
@@ -45,7 +45,7 @@
         "description": "Phasellus condimentum nisi id libero vehicula, ac vehicula leo ultrices.",
         "image": "https://i.ibb.co/S0BT7BL/istockphoto-516646920-612x612.jpg",
         "brand": "Brand F",
-        "stock_quality": 25
+        "price": 14.60
     },
     {
         "Product_id": "P007",
@@ -53,7 +53,7 @@
         "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
         "image": "https://i.ibb.co/bvN558L/istockphoto-890151396-612x612.jpg",
         "brand": "Brand G",
-        "stock_quality": 18
+        "price": 84.60
     },
     {
         "Product_id": "P008",
@@ -61,7 +61,7 @@
         "description": "Vestibulum suscipit odio vitae quam aliquam, at commodo quam cursus.",
         "image": "https://i.ibb.co/vYTmyY6/istockphoto-1455502427-612x612.jpg",
         "brand": "Brand H",
-        "stock_quality": 30
+        "price": 84.60
     },
     {
         "Product_id": "P009",
@@ -69,7 +69,7 @@
         "description": "Duis sodales, sapien quis vehicula bibendum, leo odio malesuada dui, a eleifend odio felis et quam.",
         "image": "https://i.ibb.co/T1T0CKr/kiran-ck.jpg",
         "brand": "Brand I",
-        "stock_quality": 5
+        "price": 76.60
     },
     {
         "Product_id": "P010",
@@ -77,7 +77,7 @@
         "description": "Proin tincidunt dictum convallis.",
         "image": "https://i.ibb.co/L8kdSM5/pmv-chamara.jpg",
         "brand": "Brand J",
-        "stock_quality": 14
+        "price": 84.60
     },
     {
         "Product_id": "P011",
@@ -85,7 +85,7 @@
         "description": "Aliquam congue bibendum arcu ut consequat.",
         "image": "https://i.ibb.co/XCWnmW3/tyler-nix.jpg",
         "brand": "Brand K",
-        "stock_quality": 22
+        "price": 84.60
     },
     {
         "Product_id": "P012",
@@ -93,7 +93,7 @@
         "description": "Praesent ultrices eget nunc a viverra.",
         "image": "https://i.ibb.co/JzG2KVT/tyler-nix.jpg",
         "brand": "Brand L",
-        "stock_quality": 7
+        "price": 844.60
     },
     {
         "Product_id": "P013",
@@ -101,6 +101,7 @@
         "description": "Sed posuere, tortor id dapibus sodales, enim tortor facilisis arcu, sit amet lacinia lorem nibh a ante.",
         "image": "https://i.ibb.co/HdVpmG0/wiser-by-the-milejpg.jpg",
         "brand": "Brand M",
-        "stock_quality": 17
+        "price": 84.60
     }
 ]
+

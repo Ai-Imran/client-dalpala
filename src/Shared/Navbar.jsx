@@ -56,9 +56,9 @@ const Navbar = () => {
 
                 </div>
                 <SearchButton />
-                <div className="lg:hidden gap-2 flex ml-[70px]">
-                    <FaUser className='text-2xl' />
-                    <div className=' flex font-bold flex-col'>
+                <div className="lg:hidden gap-2 flex ml-[50px]">
+                    {/* <FaUser className='text-2xl' /> */}
+                    <div className=' flex font-bold ml-1 flex-col'>
                         {
                             user && user.displayName ? <span className='text-purple-700'>
                             {user.displayName.split(' ')[0]}
@@ -68,6 +68,11 @@ const Navbar = () => {
                         {
                             user ? <span className='cursor-pointer' onClick={handleLogout}>Logout</span> : <NavLink to={'/signup'}>Register</NavLink>
                         }
+                    </div>
+                     <div className="">
+                        <FaShoppingBag className="text-3xl  text-lime-300" />
+                        {/* <div className="badge w-[35px] relative -top-6 left-5">+99</div> */}
+                        <div className="badge w-[35px] text-white border-lime-300 bg-gray-800 relative -top-7 left-4">+99</div>
                     </div>
                 </div>
 
@@ -89,7 +94,6 @@ const Navbar = () => {
                     </ul>
                     <div className="">
                         <FaShoppingBag className="text-4xl text-lime-300 pt-1" />
-                        {/* <div className="badge w-[35px] relative -top-6 left-5">+99</div> */}
                         <div className="badge w-[35px] text-white border-lime-300 bg-gray-800 relative -top-7 left-6">+99</div>
                     </div>
                 </div>

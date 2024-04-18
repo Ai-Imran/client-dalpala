@@ -1,8 +1,8 @@
 const SingleProduct = () => {
 
     return (
-        <div>
-
+        <div className="">
+            <h2 className="pt-5">This is a product detail page</h2>
         </div>
     )
 }
