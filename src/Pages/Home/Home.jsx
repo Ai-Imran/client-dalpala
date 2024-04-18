@@ -6,6 +6,7 @@ import { Helmet } from "react-helmet-async";
 
 
 const Home = () => {
+
     
     return (
         <div>
@@ -25,7 +26,8 @@ const Home = () => {
              </div>
              <h3 className="lg:text-4xl rounded-2xl font-bold text-center mx-auto bg-gray-800 text-white py-3 lg:mt-4 lg:py-4">All Your Products are Here</h3>
 
-             <div>
+             {/*  */}
+             <div className=" mt-10">
                 <Shpos/>
              </div>
 

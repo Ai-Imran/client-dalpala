@@ -9,6 +9,7 @@ import Signup from "../Pages/Signup/Signup";
 import Contact from "../Pages/Contact/Contact";
 import Shpos from "../Pages/Shops/Shpos";
 import error from '../assets/error.png'
+import SingleProduct from "../Pages/Shops/SignleProduct";
   
   export const router = createBrowserRouter([
     {
@@ -35,6 +36,10 @@ import error from '../assets/error.png'
             {
               path: 'shops',
               element : <Shpos/>
+            },
+            {
+              path: 'single-shop',
+              element: <SingleProduct/>
             }
             
         ]
