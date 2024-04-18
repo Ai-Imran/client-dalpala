@@ -19,8 +19,9 @@ import SingleProduct from "../Pages/Shops/SignleProduct";
         children : [
             {
                 path: '/',
-                element: <Home/>
-            },
+                element: <Home/>,
+                // loader: ({params}) => fetch(`http://localhost:5000/home/${params.id}`)
+              },
             {
               path: 'login',
               element:<Login/>
@@ -38,8 +39,9 @@ import SingleProduct from "../Pages/Shops/SignleProduct";
               element : <Shpos/>
             },
             {
-              path: 'single-shop',
-              element: <SingleProduct/>
+              path: 'single-shop/:id',
+              element: <SingleProduct/>,
+              loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
             }
             
         ]

@@ -1,8 +1,12 @@
+import { useLoaderData } from "react-router-dom";
+
 const SingleProduct = () => {
+    const product = useLoaderData()
+    console.log(product);
 
     return (
         <div className="">
-            <h2 className="pt-5">This is a product detail page</h2>
+            <h2 className="">This is a product detail page</h2>
         </div>
     )
 }
