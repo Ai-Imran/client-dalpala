@@ -34,7 +34,7 @@ const Home = () => {
             <div className="lg:mt-10">
                 <div className="grid items-center border px-4 py-4 lg:gap-6 gap-3 bg-gray-100 grid-cols-2 lg:grid-cols-3">
                     {loading ? (
-                        <div>Loading...</div>
+                       <span className="loading mx-auto text-center lg:mt-1/2 lg:ml-80 loading-dots loading-lg"></span>
                     ) : (
                         products.slice(0, 10).map(product => (
                             <div className="hover:text-black bg-white" key={product.Product_id}>
@@ -68,7 +68,7 @@ const Home = () => {
                     )}
                 </div>
                 {/* Assuming you want to show more products */}
-                <Link className="block mx-4 bg-indigo-950 lg:w-1/3 mb-3 lg:mx-auto text-white text-center lg:text-[16px] text-[13px] py-2 rounded" to={`/show-more`}>Show More</Link>
+                <Link className="block mx-4 bg-indigo-950 lg:w-1/3 mb-3 lg:mx-auto text-white text-center lg:text-[16px] text-[13px] py-2 rounded" to={`/shops`}>Show More</Link>
             </div>
         </div>
     );

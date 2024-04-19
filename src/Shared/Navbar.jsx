@@ -82,7 +82,7 @@ const Navbar = () => {
                         <NavLink to={'/shops'}>Shop Now</NavLink>
                         <div className="mx-2">
                             {
-                                user ? user?.displayName : <NavLink to={'/login'}>Login</NavLink>
+                                user ? <span className='text-blue-600'> {user?.displayName}</span> : <NavLink to={'/login'}>Login</NavLink>
                             }
                         </div>
                         <div className="mx-2">

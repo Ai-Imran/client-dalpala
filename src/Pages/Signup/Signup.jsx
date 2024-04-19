@@ -31,6 +31,7 @@ const Signup = () => {
         const number = formData.get('number');
         const gender = formData.get('gender');
         const dateOfBirth = formData.get('date');
+        const address = formData.get('address');
         const email = formData.get('email');
         const password = formData.get('password');
        
@@ -62,6 +63,10 @@ const Signup = () => {
                     <div className="my-3">
                         <label htmlFor="number">Mobile Noumber*</label>
                         <input required className="block border outline-none rounded-sm hover:border-lime-400 border-lime-400 px-3 py-2 lg:w-1/2 w-full" type="number" placeholder="Enter Number" name="number" />
+                    </div>
+                    <div className="my-3">
+                        <label htmlFor="address">Your address*</label>
+                        <input required className="block border outline-none rounded-sm hover:border-lime-400 border-lime-400 px-3 py-2 lg:w-1/2 w-full" type="text" placeholder="village/Upazila/Zila" name="address" />
                     </div>
                     <div className="my-2">
                         <label className="" htmlFor="gender">Gender</label>
