@@ -1,7 +1,7 @@
 import { Link, NavLink } from 'react-router-dom';
 import './style.css'
 import dalpala from '../assets/dal1.png'
-import { FaSearch, FaShoppingBag, FaUser } from "react-icons/fa";
+import {  FaShoppingBag,  } from "react-icons/fa";
 import { RiMenuFoldLine } from "react-icons/ri";
 import SearchButton from '../Components/SearchButton';
 import { useContext } from 'react';
@@ -16,7 +16,7 @@ const Navbar = () => {
     }
     return (
         <div>
-            <div className="navbar lg:py-4 text-white lg:flex bg-[#4cd137] lg:px-10">
+            <div className="navbar pl-5 lg:py-4 text-white lg:flex bg-[#4cd137] lg:px-10">
                 <div className="navbar-start  ">
 
                     <div className="drawer  pl-2 lg:hidden">
@@ -71,8 +71,7 @@ const Navbar = () => {
                     </div>
                      <div className="">
                         <FaShoppingBag className="text-3xl  text-lime-300" />
-                        {/* <div className="badge w-[35px] relative -top-6 left-5">+99</div> */}
-                        <div className="badge w-[35px] text-white border-lime-300 bg-gray-800 relative -top-7 left-4">+99</div>
+                        {/* <div className="badge w-[35px] text-white border-lime-300 bg-gray-800 relative -top-7 left-4">+99</div> */}
                     </div>
                 </div>
 
@@ -94,7 +93,7 @@ const Navbar = () => {
                     </ul>
                     <div className="">
                         <FaShoppingBag className="text-4xl text-lime-300 pt-1" />
-                        <div className="badge w-[35px] text-white border-lime-300 bg-gray-800 relative -top-7 left-6">+99</div>
+                        {/* <div className="badge w-[35px] text-white border-lime-300 bg-gray-800 relative -top-7 left-6">+99</div> */}
                     </div>
                 </div>
 
