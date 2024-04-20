@@ -10,6 +10,7 @@ import Contact from "../Pages/Contact/Contact";
 import Shpos from "../Pages/Shops/Shpos";
 import error from '../assets/error.png'
 import SingleProduct from "../Pages/Shops/SignleProduct";
+import BuyProduct from "../Pages/BuyProduct/BuyProduct";
   
   export const router = createBrowserRouter([
     {
@@ -42,6 +43,10 @@ import SingleProduct from "../Pages/Shops/SignleProduct";
               path: 'single-shop/:id',
               element: <SingleProduct/>,
               loader: ({params}) => fetch(`http://localhost:5000/products/${params.id}`)
+            },
+            {
+              path: 'buy-now',
+              element : <BuyProduct/>
             }
             
         ]

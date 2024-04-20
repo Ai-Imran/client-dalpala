@@ -61,7 +61,7 @@ const Signup = () => {
                         <input required className="block border outline-none rounded-sm hover:border-lime-400 border-lime-400 px-3 py-2 lg:w-1/2 w-full" type="name" placeholder="Your Name" name="name" />
                     </div>
                     <div className="my-3">
-                        <label htmlFor="number">Mobile Noumber*</label>
+                        <label htmlFor="number">Mobile Number*</label>
                         <input required className="block border outline-none rounded-sm hover:border-lime-400 border-lime-400 px-3 py-2 lg:w-1/2 w-full" type="number" placeholder="Enter Number" name="number" />
                     </div>
                     <div className="my-3">

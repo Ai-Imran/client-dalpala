@@ -54,11 +54,13 @@ const Home = () => {
                                                 <Link className="block bg-indigo-950 text-white text-center lg:text-[16px] text-[13px] py-2 rounded" to={`/single-shop/${product._id}`}>See Details</Link>
                                             </div>
                                             <div className="flex lg:text-[16px] text-[12px] cursor-pointer mt-1 rounded text-center ">
-                                                <div className="lg:w-1/2 bg-lime-950 py-2 rounded-l text-white flex items-center">
+                                                <Link to={'/buy-now'} className="lg:w-1/2 bg-lime-950 py-2 rounded-l text-white flex items-center">
                                                     <span className="lg:ml-8 ml-2">Add to</span>
                                                     <FaCartArrowDown className="lg:text-2xl text-xl mr-2 mx-1" />
-                                                </div>
-                                                <div className="w-1/2 bg-amber-950 py-2 rounded-r text-white">Buy Now</div>
+                                                </Link>
+                                               <Link to={'/buy-now'} className="w-1/2 bg-amber-950 py-2 rounded-r text-white">
+                                               Buy Now
+                                               </Link>
                                             </div>
                                         </div>
                                     </div>

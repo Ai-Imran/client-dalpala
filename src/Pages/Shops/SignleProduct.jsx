@@ -1,4 +1,4 @@
-import { useLoaderData, useNavigate } from "react-router-dom";
+import { Link, useLoaderData, useNavigate } from "react-router-dom";
 import ImageGallery from "react-image-gallery";
 // import stylesheet if you're not already using CSS @import
 import "react-image-gallery/styles/css/image-gallery.css";
@@ -48,10 +48,12 @@ const SingleProduct = () => {
            <ImageGallery  items={images} />
             </div>
             <div className="flex  lg:text-[16px]  text-[12px] cursor-pointer mt-1 rounded text-center ">
-                           <div className="w-1/2 bg-lime-950 py-2 rounded-l text-white flex justify-center items-center">
+                           <Link to={'/buy-now'} className="w-1/2 bg-lime-950 py-2 rounded-l text-white flex justify-center items-center">
                              <span className=" ">Add to</span> <FaCartArrowDown className="lg:text-2xl ml-1 text-xl " /> 
-                             </div>
-                            <div className="w-1/2 bg-amber-950 py-2 rounded-r text-white">Buy Now</div>
+                             </Link>
+                             <Link to={'/buy-now'} className="w-1/2 bg-amber-950 py-2 rounded-r text-white">
+                                               Buy Now
+                                               </Link>
                            </div>
            </div>
            <div>
