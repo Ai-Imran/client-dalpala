@@ -32,11 +32,12 @@ const AuthProviders = ({ children }) => {
         return signOut(auth);
     }
 
-    const updateUserProfile = (name) => {
+    const updateUserProfile = (name,number) => {
         const user = auth.currentUser;
         if (user) {
             return updateProfile(user, {
-                displayName: name
+                displayName: name,
+                phoneNumber:number,
             });
         } else {
             // Handle the case where the user is not authenticated
@@ -50,7 +51,7 @@ const AuthProviders = ({ children }) => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(auth, currentUser => {
             setUser(currentUser);
-            // console.log(currentUser);
+            console.log(currentUser);
 
         });
         return () => {

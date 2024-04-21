@@ -12,6 +12,7 @@ const Signup = () => {
     const {createUser,updateUserProfile} = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
+    const [errorMessage, setErrorMessage] = useState('');
 
     const from = location.state?.from?.pathname || "/";
 
@@ -23,30 +24,34 @@ const Signup = () => {
         setPassword(e.target.value);
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault()
-        const formData = new FormData(e.target);
+   // Inside your handleSubmit function
 
-        const name = formData.get('name');
-        const number = formData.get('number');
-        const gender = formData.get('gender');
-        const dateOfBirth = formData.get('date');
-        const address = formData.get('address');
-        const email = formData.get('email');
-        const password = formData.get('password');
-       
+const handleSubmit = async (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
 
-        createUser(email,password)
-        .then(res => {
-            console.log(res.user);
-            updateUserProfile(name)
-            sendEmailVerification(res.user)
-            navigate(from, { replace: true });
-            window.location.reload();
+    const name = formData.get('name');
+    const number = formData.get('number');
+    const gender = formData.get('gender');
+    const dateOfBirth = formData.get('date');
+    const address = formData.get('address');
+    const email = formData.get('email');
 
-        })
-        .catch(err => console.log(err))
+    try {
+        const res = await createUser(email, password);
+        await updateUserProfile(name, number); // Update display name and phone number
+        await sendEmailVerification(res.user); // Send email verification
+        navigate(from, { replace: true });
+        window.location.reload();
+    } catch (err) {
+        if (err.code === 'auth/email-already-in-use') {
+            setErrorMessage('This email is already in use. Please use a different email.');
+        } else {
+            console.error(err);
+        }
     }
+};
+
     return (
         <div>
             <Helmet>
@@ -58,7 +63,7 @@ const Signup = () => {
                 <div className="lg:w-3/4 w-full lg:ml-[330px] mx-auto">
                     <div className="my-3 mt-8">
                         <label htmlFor="name">Name*</label>
-                        <input required className="block border outline-none rounded-sm hover:border-lime-400 border-lime-400 px-3 py-2 lg:w-1/2 w-full" type="name" placeholder="Your Name" name="name" />
+                        <input required className="block border outline-none rounded-sm hover:border-lime-400 border-lime-400 px-3 py-2 lg:w-1/2 w-full" type="text" placeholder="Your Name" name="name" />
                     </div>
                     <div className="my-3">
                         <label htmlFor="number">Mobile Number*</label>
@@ -109,6 +114,7 @@ const Signup = () => {
                     </div>
                     <input className="block   rounded-smborder-lime-400 bg-[#4cd137] rounded-sm text-white font-bold mb-2 px-3 py-2 lg:w-1/2 w-full" type="submit" value="Sign in" />
                 </div>
+                {errorMessage && <p className="text-red-500 mx-auto text-center">{errorMessage}</p>}
         <p className="mx-auto text-center">If You have already Account ! please <Link className="hover:text-lime-500 text-lime-700" to={'/login'}>Login</Link></p>
             </form>
 
