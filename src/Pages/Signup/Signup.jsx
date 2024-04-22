@@ -53,7 +53,7 @@ const handleSubmit = async (e) => {
 };
 
     return (
-        <div>
+        <div className="min-h-screen">
             <Helmet>
                 <title>Dalpala | Signup</title>
             </Helmet>

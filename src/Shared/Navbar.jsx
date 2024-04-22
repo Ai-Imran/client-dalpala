@@ -16,7 +16,7 @@ const Navbar = () => {
     }
     return (
         <div>
-            <div className="navbar pl-5 lg:py-4 text-white lg:flex bg-[#4cd137] lg:px-10">
+            <div className="navbar  lg:py-4 text-white lg:flex  bg-[#4cd137] lg:px-10">
                 <div className="navbar-start  ">
 
                     <div className="drawer  pl-2 lg:hidden">
@@ -39,7 +39,7 @@ const Navbar = () => {
                                         user ? user?.displayName : <NavLink to={'/login'}>Login</NavLink>
                                     }
                                 </div>
-                                <div className="my-6">
+                                <div className="my-6 ">
                                     {
                                         user ? <span className='cursor-pointer' onClick={handleLogout}>Logout</span> : <NavLink to={'/signup'}>Create Account</NavLink>
                                     }
@@ -49,14 +49,14 @@ const Navbar = () => {
                             </ul>
                         </div>
                     </div>
-                    <Link to={'/'} className='flex  gap-2  items-center '>
-                        <img className='w-[50px] opacity-65' src={dalpala} alt="dalapla-logo" />
-                        <h1 className='font-bold hover:text-lime-200 lg:text-3xl text-2xl'>Dalpala</h1>
+                    <Link to={'/'} className='flex   '>
+                        {/* <img className='w-[50px] opacity-65' src={dalpala} alt="dalapla-logo" /> */}
+                        <h1 className='font-bold mx- hover:text-lime-200 lg:text-3xl text-2xl'>Dalpala</h1>
                     </Link>
 
                 </div>
-                <SearchButton />
-                <div className="lg:hidden gap-2 flex ml-[50px]">
+                {/* <SearchButton /> */}
+                <div className="lg:hidden gap-2 flex ml-[30px]">
                     {/* <FaUser className='text-2xl' /> */}
                     <div className=' flex font-bold ml-1 flex-col'>
                         {
@@ -69,10 +69,10 @@ const Navbar = () => {
                             user ? <span className='cursor-pointer' onClick={handleLogout}>Logout</span> : <NavLink to={'/signup'}>Register</NavLink>
                         }
                     </div>
-                     <div className="">
+                     <Link to={'/shops'} className="mx-3">
                         <FaShoppingBag className="text-3xl  text-lime-300" />
                         {/* <div className="badge w-[35px] text-white border-lime-300 bg-gray-800 relative -top-7 left-4">+99</div> */}
-                    </div>
+                    </Link>
                 </div>
 
                 <div className="navbar-center  hidden lg:flex">

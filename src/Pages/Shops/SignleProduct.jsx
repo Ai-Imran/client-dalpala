@@ -70,7 +70,7 @@ const SingleProduct = () => {
     }, [quantity, product?.price]);
 
     return (
-        <div className="border mb-1 px-2">
+        <div className="border mb-1 min-h-screen px-2">
             <span onClick={goBack}>
                 <IoArrowBack className="my-3 text-orange-500 hover:text-lime-500 text-3xl" />
             </span>
