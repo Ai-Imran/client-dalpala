@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import useProducts from "../../Hooks/useProducts";
 import { Link } from "react-router-dom";
@@ -7,14 +7,27 @@ import { FaCartArrowDown, FaSearch } from "react-icons/fa";
 const Shpos = () => {
   const [products, loading] = useProducts();
   const [searchTerm, setSearchTerm] = useState("");
+  const [filteredProducts, setFilteredProducts] = useState([]);
+
+  // Function to filter products by brand
+  const filterByBrand = (brand) => {
+    const filtered = products.filter((product) => product.brand === brand);
+    setFilteredProducts(filtered);
+  };
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
+    const term = e.target.value.toLowerCase();
+    const filtered = products.filter((product) =>
+      product.name.toLowerCase().includes(term)
+    );
+    setFilteredProducts(filtered);
   };
 
-  const filteredProducts = products.filter((product) =>
-    product.name.toLowerCase().includes(searchTerm.toLowerCase())
-  );
+  useEffect(() => {
+    // Filter initially by "Brand A" when component mounts
+    filterByBrand("Brand A");
+  }, [products]); // Make sure to include products as a dependency
 
   return (
     <div className="mb-2 min-h-screen">
@@ -40,12 +53,19 @@ const Shpos = () => {
         </label>
       </div>
 
+      <div>
+        <p onClick={() => filterByBrand("Brand A")}>brand a</p>
+        <p onClick={() => filterByBrand("Brand B")}>brand b</p>
+        <p onClick={() => filterByBrand("Brand C")}>brand c</p>
+        <p onClick={() => filterByBrand("Brand D")}>brand d</p>
+      </div>
+
       {loading ? (
         <span className="loading mx-auto lg:mt-[250px] text-center lg:mt-1/2 lg:ml-80 loading-dots loading-lg"></span>
       ) : (
         <>
           {filteredProducts.length === 0 ? (
-            <div className="text-center text-red-500 mt-4">
+            <div className="text-center  text-red-500 mt-4">
               Your product cannot be found.
             </div>
           ) : (

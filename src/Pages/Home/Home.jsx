@@ -32,6 +32,13 @@ const Home = () => {
         setFilteredProducts(filtered);
     };
 
+    const filterByBrand = (brand) => {
+        const filtered = products.filter(product =>
+            product.brand === brand
+        );
+        setFilteredProducts(filtered);
+    };
+
     return (
         <div className='min-h-screen'>
             <Helmet>
@@ -56,7 +63,12 @@ const Home = () => {
                 </label>
             </div>
 
-            <h3 className="lg:text-4xl lg:rounded-2xl font-bold text-center mx-auto bg-gray-800 text-white py-1 hidden lg:mt-4 lg:py-4">All Your Products are Here</h3>
+            <div>
+                <p onClick={() => filterByBrand('Brand A')}>brand a</p>
+                <p onClick={() => filterByBrand('Brand B')}>brand b</p>
+                <p onClick={() => filterByBrand('Brand C')}>brand c</p>
+                <p onClick={() => filterByBrand('Brand D')}>brand d</p>
+            </div>
 
             <div className="lg:mt-3">
                 <div className="grid items-center  px-4 py-4 lg:gap-6 gap-3 bg-gray-100 grid-cols-2 lg:grid-cols-3">
