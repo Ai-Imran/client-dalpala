@@ -12,7 +12,8 @@ const SingleProduct = () => {
     const navigate = useNavigate();
     const [quantity, setQuantity] = useState(1);
     const [errorMessage, setErrorMessage] = useState("");
-    const [total, setTotal] = useState(0);
+
+    // const [total, setTotal] = useState(0);
 
     const goBack = () => {
         navigate(-1);
@@ -33,30 +34,52 @@ const SingleProduct = () => {
         },
     ];
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         const formData = new FormData(e.target);
-
+    
         const name = formData.get('name');
         const number = formData.get('number');
         const address = formData.get('address');
         const email = formData.get('email');
         const quantity = parseInt(formData.get('quantity'));
-
+    
         if (quantity <= 0 || isNaN(quantity)) {
             setErrorMessage("Quantity should be a positive number.");
             return;
         }
-
+    
         const totalCost = (quantity * parseFloat(product?.price)).toFixed(2);
-        console.log("Total Cost:", totalCost);
-        setTotal(totalCost)
-
-        console.log(name, number, address, email, quantity, totalCost);
-
-
-        // Handle form submission logic
+        // console.log("Total Cost:", totalCost);
+    
+        const newBuying = { name, number, address, email, quantity, totalCost };
+        // console.log( name, number, address, email, quantity, totalCost);
+    
+        try {
+            const response = await fetch('http://localhost:5000/buying', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    // Add any other headers if required
+                },
+                body: JSON.stringify(newBuying),
+            });
+    
+            if (response.ok) {
+                // Handle success response
+                // console.log("New buying data posted successfully!");
+                // console.log(response);
+                navigate('/buy-now')
+            } else {
+                // Handle error response
+                console.error("Failed to post new buying data:", response.statusText);
+            }
+        } catch (error) {
+            // Handle network error
+            console.error("Error:", error);
+        }
     };
+    
 
     useEffect(() => {
         if (quantity <= 0 || isNaN(quantity)) {
