@@ -4,6 +4,11 @@ import useProducts from "../../Hooks/useProducts";
 import { Link } from "react-router-dom";
 import { FaCartArrowDown, FaSearch } from "react-icons/fa";
 
+import tshirt from '../../assets/tshirt.jpg'
+import shoes from '../../assets/shoes.jpg'
+import  eyglass from '../../assets/eyglass.jpg'
+import girlshoes from '../../assets/girl-shoes.jpg'
+
 const Shpos = () => {
   const [products, loading] = useProducts();
   const [searchTerm, setSearchTerm] = useState("");
@@ -53,12 +58,24 @@ const Shpos = () => {
         </label>
       </div>
 
-      <div>
-        <p onClick={() => filterByBrand("Brand A")}>brand a</p>
-        <p onClick={() => filterByBrand("Brand B")}>brand b</p>
-        <p onClick={() => filterByBrand("Brand C")}>brand c</p>
-        <p onClick={() => filterByBrand("Brand D")}>brand d</p>
-      </div>
+      <div className="flex mt-3 overflow-x-auto justify-around">
+                <div className="grid " onClick={() => filterByBrand('Brand A')}>
+                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
+                    <p className="text-center">T Shirt</p>
+                </div>
+                <div className="grid " onClick={() => filterByBrand('Brand B')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={shoes} alt="" />
+                    <p className="text-center">Shows</p>
+                </div>
+                <div className="grid " onClick={() => filterByBrand('Brand C')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={girlshoes} alt="" />
+                    <p className="text-center">Girl Shows</p>
+                </div>
+                <div className="grid " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={eyglass} alt="" />
+                    <p className="text-center">Eye Glass</p>
+                </div>
+            </div>
 
       {loading ? (
         <span className="loading mx-auto lg:mt-[250px] text-center lg:mt-1/2 lg:ml-80 loading-dots loading-lg"></span>

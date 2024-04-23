@@ -6,7 +6,7 @@ import { MdEmail } from "react-icons/md";
 const Contact = () => {
 
     return (
-        <div className="min-h-screen w-3/4 mx-auto ">
+        <div className="min-h-screen w-3/4 mx-auto lg:mt-32">
             <Helmet>
                 <title>Dalpala | Contact</title>
             </Helmet>

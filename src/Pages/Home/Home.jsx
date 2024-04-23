@@ -2,6 +2,10 @@ import React, { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
 import { Link } from 'react-router-dom';
 import { FaCartArrowDown, FaSearch } from 'react-icons/fa';
+import tshirt from '../../assets/tshirt.jpg'
+import shoes from '../../assets/shoes.jpg'
+import  eyglass from '../../assets/eyglass.jpg'
+import girlshoes from '../../assets/girl-shoes.jpg'
 
 const Home = () => {
     const [products, setProducts] = useState([]);
@@ -63,14 +67,26 @@ const Home = () => {
                 </label>
             </div>
 
-            <div>
-                <p onClick={() => filterByBrand('Brand A')}>brand a</p>
-                <p onClick={() => filterByBrand('Brand B')}>brand b</p>
-                <p onClick={() => filterByBrand('Brand C')}>brand c</p>
-                <p onClick={() => filterByBrand('Brand D')}>brand d</p>
+            <div className="flex mt-3 justify-around overflow-x-auto">
+                <div className="grid " onClick={() => filterByBrand('Brand A')}>
+                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
+                    <p className="text-center">T Shirt</p>
+                </div>
+                <div className="grid " onClick={() => filterByBrand('Brand B')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={shoes} alt="" />
+                    <p className="text-center">Shows</p>
+                </div>
+                <div className="grid " onClick={() => filterByBrand('Brand C')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={girlshoes} alt="" />
+                    <p className="text-center">Girl Shows</p>
+                </div>
+                <div className="grid " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={eyglass} alt="" />
+                    <p className="text-center">Eye Glass</p>
+                </div>
             </div>
 
-            <div className="lg:mt-3">
+            <div className="">
                 <div className="grid items-center  px-4 py-4 lg:gap-6 gap-3 bg-gray-100 grid-cols-2 lg:grid-cols-3">
                     {loading ? (
                         <span className="loading mx-auto lg:mt-[250px] text-center lg:mt-1/2 lg:ml-80 loading-dots loading-lg"></span>
