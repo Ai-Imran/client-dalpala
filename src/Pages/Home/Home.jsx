@@ -14,7 +14,7 @@ const Home = () => {
     const [filteredProducts, setFilteredProducts] = useState([]);
 
     useEffect(() => {
-        fetch(`http://localhost:5000/home`)
+        fetch('http://localhost:5000/products')
             .then(res => res.json())
             .then(data => {
                 setProducts(data);
@@ -67,7 +67,32 @@ const Home = () => {
                 </label>
             </div>
 
-            <div className="flex mt-3 gap-3 lg:gap-8 overflow-x-auto">
+            <div className="flex mt-3 gap-3 lg:gap-8  overflow-x-auto">
+              
+                <div className="grid " onClick={() => filterByBrand('Brand A')}>
+                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
+                    <p className="text-center">T Shirt</p>
+                </div>
+                <div className="grid " onClick={() => filterByBrand('Brand A')}>
+                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
+                    <p className="text-center">T Shirt</p>
+                </div>
+                <div className="grid " onClick={() => filterByBrand('Brand A')}>
+                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
+                    <p className="text-center">T Shirt</p>
+                </div>
+                <div className="grid " onClick={() => filterByBrand('Brand A')}>
+                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
+                    <p className="text-center">T Shirt</p>
+                </div>
+                <div className="grid " onClick={() => filterByBrand('Brand A')}>
+                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
+                    <p className="text-center">T Shirt</p>
+                </div>
+                <div className="grid " onClick={() => filterByBrand('Brand A')}>
+                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
+                    <p className="text-center">T Shirt</p>
+                </div>
                 <div className="grid " onClick={() => filterByBrand('Brand A')}>
                     <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
                     <p className="text-center">T Shirt</p>
@@ -79,6 +104,19 @@ const Home = () => {
                 <div className="grid " onClick={() => filterByBrand('Brand C')}>
                 <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={girlshoes} alt="" />
                     <p className="text-center">Girl Shows</p>
+                </div>
+                <div className="grid " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={eyglass} alt="" />
+                    <p className="text-center">Eye Glass</p>
+                </div>
+               
+                <div className="grid " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={eyglass} alt="" />
+                    <p className="text-center">Eye Glass</p>
+                </div>
+                <div className="grid " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={eyglass} alt="" />
+                    <p className="text-center">Eye Glass</p>
                 </div>
                 <div className="grid " onClick={() => filterByBrand('Brand D')}>
                 <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={eyglass} alt="" />
