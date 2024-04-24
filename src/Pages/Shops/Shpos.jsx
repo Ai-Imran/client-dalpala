@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import { Helmet } from "react-helmet-async";
-import useProducts from "../../Hooks/useProducts";
+// import useProducts from "../../Hooks/useProducts";
 import { Link } from "react-router-dom";
 import { FaCartArrowDown, FaSearch } from "react-icons/fa";
 
@@ -10,7 +10,17 @@ import  eyglass from '../../assets/eyglass.jpg'
 import girlshoes from '../../assets/girl-shoes.jpg'
 
 const Shpos = () => {
-  const [products, loading] = useProducts();
+  // const [products, loading] = useProducts();
+  const [products, setproducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+      fetch('http://localhost:5000/products')
+          .then(res => res.json())
+          .then(data => {
+              setproducts(data);
+              setLoading(false);
+          });
+  }, [])
   const [searchTerm, setSearchTerm] = useState("");
   const [filteredProducts, setFilteredProducts] = useState([]);
 

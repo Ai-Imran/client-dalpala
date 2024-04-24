@@ -106,31 +106,4 @@
 // ]
 
 
-{
-    "name": "Smart Home Security Camera",
-    "price": 99.99,
-    "description": "High-definition smart security camera for indoor and outdoor use.",
-    "brand": "SecureTech",
-    "color": "White",
-    "size": "Compact",
-    "weight": "0.3 lbs",
-    "dimensions": "3 x 2 x 2 inches",
-    "capacity": "N/A",
-    "powerRequirements": "USB Power Adapter",
-    "certifications": ["IP65 Weatherproof", "Night Vision", "Two-Way Audio"],
-    "compatibility": ["iOS", "Android", "Amazon Alexa", "Google Assistant"],
-    "material": "Plastic, Metal",
-    "features": ["Motion Detection", "Cloud Storage", "Remote Access"],
-    "specifications": {
-      "Resolution": "1080p Full HD",
-      "FieldOfView": "120 degrees",
-      "Connectivity": "Wi-Fi (2.4 GHz)",
-      "Storage": "Cloud Storage, MicroSD card (up to 128GB)"
-    },
-    "images": [
-      "security_camera_white_1.jpg",
-      "security_camera_white_2.jpg",
-      "security_camera_white_3.jpg"
-    ]
-  }
   
