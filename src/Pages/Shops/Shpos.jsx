@@ -58,7 +58,7 @@ const Shpos = () => {
         </label>
       </div>
 
-      <div className="flex mt-3 overflow-x-auto justify-around">
+      <div className="flex mt-3 overflow-x-auto gap-3 lg:gap-8">
                 <div className="grid " onClick={() => filterByBrand('Brand A')}>
                     <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
                     <p className="text-center">T Shirt</p>

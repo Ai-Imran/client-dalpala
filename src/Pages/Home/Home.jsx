@@ -67,7 +67,7 @@ const Home = () => {
                 </label>
             </div>
 
-            <div className="flex mt-3 justify-around overflow-x-auto">
+            <div className="flex mt-3 gap-3 lg:gap-8 overflow-x-auto">
                 <div className="grid " onClick={() => filterByBrand('Brand A')}>
                     <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
                     <p className="text-center">T Shirt</p>
@@ -92,7 +92,7 @@ const Home = () => {
                         <span className="loading mx-auto lg:mt-[250px] text-center lg:mt-1/2 lg:ml-80 loading-dots loading-lg"></span>
                     ) : (
                         filteredProducts.length === 0 ? (
-                            <div className="text-center text-red-500  mt-4">
+                            <div className="text-center text-red-500 ml-[50px]  mt-4">
                             Your product cannot be found.
                           </div>
                         ) : (
@@ -106,7 +106,7 @@ const Home = () => {
                                                 <h2 className="card-title lg:text-[20px] font-bold text-[14px]">{product?.name}</h2>
                                                 <p className="lg:text-[16px] text-[12px]">{product?.description.split(' ').slice(0, 7).join(' ')}...<Link to={`/single-shop/${product._id}`} className="underline hover:text-lime-600">See more</Link> </p>
                                                 <div className="lg:flex gap-4">
-                                                    <p className="lg:text-[16px] text-[13px]">Price : {product?.price} </p>
+                                                    <p className="lg:text-[16px] text-[13px]">  Price : {product?.price} </p>
                                                     <p className="lg:text-[16px] text-[12px]">Brand : <span className="font-bold">{product?.brand}</span></p>
                                                 </div>
                                             </div>

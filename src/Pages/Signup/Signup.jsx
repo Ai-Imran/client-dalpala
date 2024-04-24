@@ -36,6 +36,9 @@ const handleSubmit = async (e) => {
     const dateOfBirth = formData.get('date');
     const address = formData.get('address');
     const email = formData.get('email');
+    const newUser = {
+        name,number,address,gender,dateOfBirth,email
+    }
 
     try {
         const res = await createUser(email, password);
@@ -43,11 +46,29 @@ const handleSubmit = async (e) => {
         await sendEmailVerification(res.user); // Send email verification
         navigate(from, { replace: true });
         window.location.reload();
+
+
+        // post user data
+        const response = await fetch('http://localhost:5000/our-users', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    // Add any other headers if required
+                },
+                body: JSON.stringify(newUser),
+            });
+    
+            if (response.ok) {
+               console.log(response);
+            } else {
+                // Handle error response
+                // console.error("Failed to post new buying data:", response.statusText);
+            }
     } catch (err) {
         if (err.code === 'auth/email-already-in-use') {
             setErrorMessage('This email is already in use. Please use a different email.');
         } else {
-            console.error(err);
+            // console.error(err);
         }
     }
 };

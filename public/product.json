@@ -1,107 +1,136 @@
-[
-    {
-        "Product_id": "P001",
-        "name": "Alex Azabache",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-        "image": "https://i.ibb.co/0FTLW4k/alex-azabache.jpg",
-        "brand": "Brand A",
-        "price": 84.60
-    },
-    {
-        "Product_id": "P002",
-        "name": "Cierra Henderson",
-        "description": "Nulla facilisi. Sed auctor varius velit, et tristique nulla facilisi.",
-        "image": "https://i.ibb.co/BjS0nFP/Cierra-Henderson.jpg",
-        "brand": "Brand B",
-        "price": 84.60
-    },
-    {
-        "Product_id": "P003",
-        "name": "Daniel Korpai",
-        "description": "Vivamus tempor purus id quam lacinia, vel lobortis purus sollicitudin.",
-        "image": "https://i.ibb.co/PFLrhqh/daniel-korpaijpg.jpg",
-        "brand": "Brand C",
-        "price": 843.60
-    },
-    {
-        "Product_id": "P004",
-        "name": "Domino",
-        "description": "Donec nec convallis libero, et molestie nisi.",
-        "image": "https://i.ibb.co/jzc7hxG/domino-164jpg.jpg",
-        "brand": "Brand D",
-        "price": 834.60
-    },
-    {
-        "Product_id": "P005",
-        "name": "Ethan Rougon",
-        "description": "Fusce at accumsan odio. Nunc vel purus mi.",
-        "image": "https://i.ibb.co/d7GFmRG/ethan-rougon-w-H63-OABr-R4-E-unsplash.jpg",
-        "brand": "Brand E",
-        "price": 54.60
-    },
-    {
-        "Product_id": "P006",
-        "name": "Istockphoto 1",
-        "description": "Phasellus condimentum nisi id libero vehicula, ac vehicula leo ultrices.",
-        "image": "https://i.ibb.co/S0BT7BL/istockphoto-516646920-612x612.jpg",
-        "brand": "Brand F",
-        "price": 14.60
-    },
-    {
-        "Product_id": "P007",
-        "name": "Istockphoto 2",
-        "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
-        "image": "https://i.ibb.co/bvN558L/istockphoto-890151396-612x612.jpg",
-        "brand": "Brand G",
-        "price": 84.60
-    },
-    {
-        "Product_id": "P008",
-        "name": "Istockphoto 3",
-        "description": "Vestibulum suscipit odio vitae quam aliquam, at commodo quam cursus.",
-        "image": "https://i.ibb.co/vYTmyY6/istockphoto-1455502427-612x612.jpg",
-        "brand": "Brand H",
-        "price": 84.60
-    },
-    {
-        "Product_id": "P009",
-        "name": "Kiran CK",
-        "description": "Duis sodales, sapien quis vehicula bibendum, leo odio malesuada dui, a eleifend odio felis et quam.",
-        "image": "https://i.ibb.co/T1T0CKr/kiran-ck.jpg",
-        "brand": "Brand I",
-        "price": 76.60
-    },
-    {
-        "Product_id": "P010",
-        "name": "PMV Chamara",
-        "description": "Proin tincidunt dictum convallis.",
-        "image": "https://i.ibb.co/L8kdSM5/pmv-chamara.jpg",
-        "brand": "Brand J",
-        "price": 84.60
-    },
-    {
-        "Product_id": "P011",
-        "name": "Tyler Nix",
-        "description": "Aliquam congue bibendum arcu ut consequat.",
-        "image": "https://i.ibb.co/XCWnmW3/tyler-nix.jpg",
-        "brand": "Brand K",
-        "price": 84.60
-    },
-    {
-        "Product_id": "P012",
-        "name": "Tyler Nix",
-        "description": "Praesent ultrices eget nunc a viverra.",
-        "image": "https://i.ibb.co/JzG2KVT/tyler-nix.jpg",
-        "brand": "Brand L",
-        "price": 844.60
-    },
-    {
-        "Product_id": "P013",
-        "name": "Wiser By The Mile",
-        "description": "Sed posuere, tortor id dapibus sodales, enim tortor facilisis arcu, sit amet lacinia lorem nibh a ante.",
-        "image": "https://i.ibb.co/HdVpmG0/wiser-by-the-milejpg.jpg",
-        "brand": "Brand M",
-        "price": 84.60
-    }
-]
+// [
+//     {
+//         "Product_id": "P001",
+//         "name": "Alex Azabache",
+//         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+//         "image": "https://i.ibb.co/0FTLW4k/alex-azabache.jpg",
+//         "brand": "Brand A",
+//         "price": 84.60
+//     },
+//     {
+//         "Product_id": "P002",
+//         "name": "Cierra Henderson",
+//         "description": "Nulla facilisi. Sed auctor varius velit, et tristique nulla facilisi.",
+//         "image": "https://i.ibb.co/BjS0nFP/Cierra-Henderson.jpg",
+//         "brand": "Brand B",
+//         "price": 84.60
+//     },
+//     {
+//         "Product_id": "P003",
+//         "name": "Daniel Korpai",
+//         "description": "Vivamus tempor purus id quam lacinia, vel lobortis purus sollicitudin.",
+//         "image": "https://i.ibb.co/PFLrhqh/daniel-korpaijpg.jpg",
+//         "brand": "Brand C",
+//         "price": 843.60
+//     },
+//     {
+//         "Product_id": "P004",
+//         "name": "Domino",
+//         "description": "Donec nec convallis libero, et molestie nisi.",
+//         "image": "https://i.ibb.co/jzc7hxG/domino-164jpg.jpg",
+//         "brand": "Brand D",
+//         "price": 834.60
+//     },
+//     {
+//         "Product_id": "P005",
+//         "name": "Ethan Rougon",
+//         "description": "Fusce at accumsan odio. Nunc vel purus mi.",
+//         "image": "https://i.ibb.co/d7GFmRG/ethan-rougon-w-H63-OABr-R4-E-unsplash.jpg",
+//         "brand": "Brand E",
+//         "price": 54.60
+//     },
+//     {
+//         "Product_id": "P006",
+//         "name": "Istockphoto 1",
+//         "description": "Phasellus condimentum nisi id libero vehicula, ac vehicula leo ultrices.",
+//         "image": "https://i.ibb.co/S0BT7BL/istockphoto-516646920-612x612.jpg",
+//         "brand": "Brand F",
+//         "price": 14.60
+//     },
+//     {
+//         "Product_id": "P007",
+//         "name": "Istockphoto 2",
+//         "description": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.",
+//         "image": "https://i.ibb.co/bvN558L/istockphoto-890151396-612x612.jpg",
+//         "brand": "Brand G",
+//         "price": 84.60
+//     },
+//     {
+//         "Product_id": "P008",
+//         "name": "Istockphoto 3",
+//         "description": "Vestibulum suscipit odio vitae quam aliquam, at commodo quam cursus.",
+//         "image": "https://i.ibb.co/vYTmyY6/istockphoto-1455502427-612x612.jpg",
+//         "brand": "Brand H",
+//         "price": 84.60
+//     },
+//     {
+//         "Product_id": "P009",
+//         "name": "Kiran CK",
+//         "description": "Duis sodales, sapien quis vehicula bibendum, leo odio malesuada dui, a eleifend odio felis et quam.",
+//         "image": "https://i.ibb.co/T1T0CKr/kiran-ck.jpg",
+//         "brand": "Brand I",
+//         "price": 76.60
+//     },
+//     {
+//         "Product_id": "P010",
+//         "name": "PMV Chamara",
+//         "description": "Proin tincidunt dictum convallis.",
+//         "image": "https://i.ibb.co/L8kdSM5/pmv-chamara.jpg",
+//         "brand": "Brand J",
+//         "price": 84.60
+//     },
+//     {
+//         "Product_id": "P011",
+//         "name": "Tyler Nix",
+//         "description": "Aliquam congue bibendum arcu ut consequat.",
+//         "image": "https://i.ibb.co/XCWnmW3/tyler-nix.jpg",
+//         "brand": "Brand K",
+//         "price": 84.60
+//     },
+//     {
+//         "Product_id": "P012",
+//         "name": "Tyler Nix",
+//         "description": "Praesent ultrices eget nunc a viverra.",
+//         "image": "https://i.ibb.co/JzG2KVT/tyler-nix.jpg",
+//         "brand": "Brand L",
+//         "price": 844.60
+//     },
+//     {
+//         "Product_id": "P013",
+//         "name": "Wiser By The Mile",
+//         "description": "Sed posuere, tortor id dapibus sodales, enim tortor facilisis arcu, sit amet lacinia lorem nibh a ante.",
+//         "image": "https://i.ibb.co/HdVpmG0/wiser-by-the-milejpg.jpg",
+//         "brand": "Brand M",
+//         "price": 84.60
+//     }
+// ]
 
+
+{
+    "name": "Smart Home Security Camera",
+    "price": 99.99,
+    "description": "High-definition smart security camera for indoor and outdoor use.",
+    "brand": "SecureTech",
+    "color": "White",
+    "size": "Compact",
+    "weight": "0.3 lbs",
+    "dimensions": "3 x 2 x 2 inches",
+    "capacity": "N/A",
+    "powerRequirements": "USB Power Adapter",
+    "certifications": ["IP65 Weatherproof", "Night Vision", "Two-Way Audio"],
+    "compatibility": ["iOS", "Android", "Amazon Alexa", "Google Assistant"],
+    "material": "Plastic, Metal",
+    "features": ["Motion Detection", "Cloud Storage", "Remote Access"],
+    "specifications": {
+      "Resolution": "1080p Full HD",
+      "FieldOfView": "120 degrees",
+      "Connectivity": "Wi-Fi (2.4 GHz)",
+      "Storage": "Cloud Storage, MicroSD card (up to 128GB)"
+    },
+    "images": [
+      "security_camera_white_1.jpg",
+      "security_camera_white_2.jpg",
+      "security_camera_white_3.jpg"
+    ]
+  }
+  
