@@ -47,14 +47,14 @@ const Shpos = () => {
   return (
     <div className="mb-2 min-h-screen">
       <Helmet>
-        <title> Dalpala | Low Price | High Quality</title>
+        <title> HomnaeBazar | Low Price | High Quality</title>
       </Helmet>
 
-      <div className="bg-gray-700 px-4 lg:rounded-lg lg:py-3 py-2">
+      <div className="bg-[#182C61] px-4 lg:rounded-lg lg:py-3 py-2">
         <label className="lg:w-1/2 mx-auto text-center  flex  items-center bg-blue-700 pr-4 rounded-r-md gap-2">
           <input
             type="text"
-            className="outline-none w-[300px] xl:w-[500px] px-2 py-2 rounded rounded-r-none focus:border-blue-700 focus:border-2 text-black"
+            className="outline-none w-[300px]  xl:w-[500px] px-2 py-2 rounded rounded-r-none focus:border-blue-700 focus:border-2 text-black"
             placeholder="Search product"
             value={searchTerm}
             onChange={handleSearch}
@@ -68,24 +68,47 @@ const Shpos = () => {
         </label>
       </div>
 
-      <div className="flex mt-3 overflow-x-auto gap-3 lg:gap-8">
-                <div className="grid " onClick={() => filterByBrand('Brand A')}>
-                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
-                    <p className="text-center">T Shirt</p>
+      <div className="overflow-x-auto">
+           <div className="flex lg:text-[13px] text-[9px] font-bold my-2 w-[1000px]  justify-start  px-2 gap-2 lg:gap-8 ">      
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" /> <p className="">bang ladesh</p>                  
                 </div>
-                <div className="grid " onClick={() => filterByBrand('Brand B')}>
-                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={shoes} alt="" />
-                    <p className="text-center">Shows</p>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />  <p className="text-[9px] font-bold">bang ladesh</p>                
                 </div>
-                <div className="grid " onClick={() => filterByBrand('Brand C')}>
-                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={girlshoes} alt="" />
-                    <p className="text-center">Girl Shows</p>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={girlshoes} alt="" />                  
                 </div>
-                <div className="grid " onClick={() => filterByBrand('Brand D')}>
-                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={eyglass} alt="" />
-                    <p className="text-center">Eye Glass</p>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />                  
                 </div>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={girlshoes} alt="" />                  
+                </div>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={girlshoes} alt="" />                  
+                </div>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={eyglass} alt="" />                  
+                </div>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />                  
+                </div>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />                  
+                </div>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />                  
+                </div>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />                  
+                </div>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />                  
+                </div>
+               
             </div>
+           </div>
 
       {loading ? (
         <span className="loading mx-auto lg:mt-[250px] text-center lg:mt-1/2 lg:ml-80 loading-dots loading-lg"></span>
@@ -150,7 +173,7 @@ const Shpos = () => {
                       </div>
                       <div className="flex  lg:text-[16px] text-[12px] cursor-pointer mt-1 rounded  text-center ">
                         <Link
-                          to={"/buy-now"}
+                          to={"/single-shop"}
                           className="lg:w-1/2 bg-lime-950 py-2 rounded-l text-white flex items-center"
                         >
                           {" "}
@@ -158,7 +181,7 @@ const Shpos = () => {
                           <FaCartArrowDown className="lg:text-2xl text-xl mr-2 mx-1" />{" "}
                         </Link>
                         <Link
-                          to={"/buy-now"}
+                          to={"/single-shop"}
                           className="w-1/2 bg-amber-950 py-2 rounded-r text-white"
                         >
                           Buy Now

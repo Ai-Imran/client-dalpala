@@ -152,7 +152,7 @@ const SingleProduct = () => {
                 <h2>Product Name: <span className=" lg:text-[20px] font-bold text-[14px]"> {product?.name}</span> </h2>
                 <div className="my-1">
                     <label htmlFor="quantity text-[14px] lg:text[18px]">How many <span className="font-bold">{product?.name}</span> do you need? </label>
-                    <input id="quantityInput" defaultValue={1} min="1" className="block border outline-none rounded-sm hover:border-lime-400 border-lime-400 px-3 py-2 lg:w-1/2 w-full" type="number" placeholder="Enter quantity" name="quantity" onChange={(e) => setQuantity(parseInt(e.target.value))} />
+                    <input required id="quantityInput"  min="1" className="block border outline-none rounded-sm hover:border-lime-400 border-lime-400 px-3 py-2 lg:w-1/2 w-full" type="number" placeholder="Enter quantity" name="quantity" onChange={(e) => setQuantity(parseInt(e.target.value))} />
                 </div>
                 <div id="totalCost" className="bg-white lg:w-1/2 py-3 px-4 my-3">
                     <h2 className="flex justify-between"> <span>Each Product is Priced at :</span> <span className="text-[18px]">$ {product?.price}</span> </h2>

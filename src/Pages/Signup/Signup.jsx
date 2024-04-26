@@ -76,7 +76,7 @@ const handleSubmit = async (e) => {
     return (
         <div className="min-h-screen">
             <Helmet>
-                <title>Dalpala | Signup</title>
+                <title>HomnaeBazar | Signup</title>
             </Helmet>
             <h3 className="lg:text-4xl font-bold text-center mx-auto bg-gray-600 text-white py-3 lg:mt-16 lg:py-6">Create an Account</h3>
             <form onSubmit={handleSubmit} className="border px-2 w-full pb-6 mb-10">

@@ -1,11 +1,11 @@
 import { Link, NavLink } from 'react-router-dom';
 import './style.css'
-import dalpala from '../assets/dal1.png'
 import {  FaShoppingBag,  } from "react-icons/fa";
 import { RiMenuFoldLine } from "react-icons/ri";
-import SearchButton from '../Components/SearchButton';
 import { useContext } from 'react';
 import { AuthContext } from '../Providers/AuthProvider';
+
+//  #4cd137
 
 const Navbar = () => {
     const { user, logOut } = useContext(AuthContext)
@@ -16,21 +16,21 @@ const Navbar = () => {
     }
     return (
         <div>
-            <div className="navbar  lg:py-4 text-white lg:flex  bg-[#4cd137] lg:px-10">
+            <div className="navbar gap-3   lg:py-4 text-white lg:flex   bg-[#130f40] lg:px-10">
                 <div className="navbar-start  ">
 
                     <div className="drawer  pl-2 lg:hidden">
                         <input id="my-drawer" type="checkbox" className="drawer-toggle" />
-                        <div className="drawer-content">
+                        <div className="drawer-content ">
                             {/* Page content here */}
                             <label htmlFor="my-drawer" className=" drawer-button">
-                                <RiMenuFoldLine className='text-4xl' />
+                                <RiMenuFoldLine className='text-4xl ' />
 
                             </label>
                         </div>
                         <div className="drawer-side">
                             <label htmlFor="my-drawer" aria-label="close sidebar" className="drawer-overlay"></label>
-                            <ul className="menu font-bold pt-8 text-[18px] space-y-8 text-white p-4 w-3/4 min-h-full bg-[#4cd137]  ">
+                            <ul className="menu font-bold pt-8 text-[18px] space-y-8 text-white p-4 w-3/4 min-h-full bg-[#2f5529]  ">
                                 {/* Sidebar content here */}
                                 <NavLink to={'/'}>Home</NavLink>
                                 <NavLink to={'/shops'}>Shop Now</NavLink>
@@ -49,24 +49,24 @@ const Navbar = () => {
                             </ul>
                         </div>
                     </div>
-                    <Link to={'/'} className='flex   '>
+                    <Link to={'/'} className='   '>
                         {/* <img className='w-[50px] opacity-65' src={dalpala} alt="dalapla-logo" /> */}
-                        <h1 className='font-bold mx- hover:text-lime-200 lg:text-3xl text-2xl'>Dalpala</h1>
+                        <h1 className=' italic font-serif hover:text-lime-200 lg:text-3xl text-xl'>HomnaeBazar</h1>
                     </Link>
 
                 </div>
                 {/* <SearchButton /> */}
-                <div className="lg:hidden gap-2 flex ml-[30px]">
+                <div className="lg:hidden gap-2 flex ml-[10px]">
                     {/* <FaUser className='text-2xl' /> */}
                     <div className=' flex font-bold ml-1 flex-col'>
                         {
-                            user && user.displayName ? <span className='text-purple-700'>
+                            user && user.displayName ? <span className='text-lime-400'>
                             {user.displayName.split(' ')[0]}
                         </span> : <NavLink to={'/login'}>Login</NavLink>
                         }
 
                         {
-                            user ? <span className='cursor-pointer' onClick={handleLogout}>Logout</span> : <NavLink to={'/signup'}>Register</NavLink>
+                        user ? "" :  <NavLink to={'/signup'}>Register</NavLink>
                         }
                     </div>
                      <Link to={'/shops'} className="mx-3">
@@ -81,7 +81,7 @@ const Navbar = () => {
                         <NavLink to={'/shops'}>Shop Now</NavLink>
                         <div className="mx-2">
                             {
-                                user ? <span className='text-blue-600'> {user?.displayName}</span> : <NavLink to={'/login'}>Login</NavLink>
+                                user ? <span className='text-lime-400'> {user?.displayName}</span> : <NavLink to={'/login'}>Login</NavLink>
                             }
                         </div>
                         <div className="mx-2">

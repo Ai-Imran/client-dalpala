@@ -49,7 +49,7 @@ const Home = () => {
                 <title>Low Price | High Quality</title>
             </Helmet>
 
-            <div className="bg-gray-700 px-4 lg:rounded-lg lg:py-3 py-2">
+            <div className="bg-[#182C61] px-4 lg:rounded-lg lg:py-3 py-2">
                 <label className="lg:w-1/2 mx-auto text-center  flex  items-center bg-blue-700 pr-4 rounded-r-md gap-2">
                     <input
                         type="text"
@@ -67,70 +67,55 @@ const Home = () => {
                 </label>
             </div>
 
-            <div className="flex mt-3 gap-3 lg:gap-8  overflow-x-auto">
-              
-                <div className="grid " onClick={() => filterByBrand('Brand A')}>
-                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
-                    <p className="text-center">T Shirt</p>
+           <div className="overflow-x-auto">
+           <div className="flex text-[9px] font-bold my-1 w-[1000px]  justify-start  px-2 gap-2 lg:gap-8 ">      
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" /> <p className="">bang ladesh</p>                  
                 </div>
-                <div className="grid " onClick={() => filterByBrand('Brand A')}>
-                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
-                    <p className="text-center">T Shirt</p>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />  <p className="text-[9px] font-bold">bang ladesh</p>                
                 </div>
-                <div className="grid " onClick={() => filterByBrand('Brand A')}>
-                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
-                    <p className="text-center">T Shirt</p>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={girlshoes} alt="" />                  
                 </div>
-                <div className="grid " onClick={() => filterByBrand('Brand A')}>
-                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
-                    <p className="text-center">T Shirt</p>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />                  
                 </div>
-                <div className="grid " onClick={() => filterByBrand('Brand A')}>
-                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
-                    <p className="text-center">T Shirt</p>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={girlshoes} alt="" />                  
                 </div>
-                <div className="grid " onClick={() => filterByBrand('Brand A')}>
-                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
-                    <p className="text-center">T Shirt</p>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={girlshoes} alt="" />                  
                 </div>
-                <div className="grid " onClick={() => filterByBrand('Brand A')}>
-                    <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={tshirt} alt="" />
-                    <p className="text-center">T Shirt</p>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />                  
                 </div>
-                <div className="grid " onClick={() => filterByBrand('Brand B')}>
-                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={shoes} alt="" />
-                    <p className="text-center">Shows</p>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />                  
                 </div>
-                <div className="grid " onClick={() => filterByBrand('Brand C')}>
-                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={girlshoes} alt="" />
-                    <p className="text-center">Girl Shows</p>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />                  
                 </div>
-                <div className="grid " onClick={() => filterByBrand('Brand D')}>
-                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={eyglass} alt="" />
-                    <p className="text-center">Eye Glass</p>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />                  
+                </div>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />                  
+                </div>
+                <div className=" " onClick={() => filterByBrand('Brand D')}>
+                <img className="lg:w-16 w-14 hover:border-red-500 rounded border  border-blue-500" src={tshirt} alt="" />                  
                 </div>
                
-                <div className="grid " onClick={() => filterByBrand('Brand D')}>
-                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={eyglass} alt="" />
-                    <p className="text-center">Eye Glass</p>
-                </div>
-                <div className="grid " onClick={() => filterByBrand('Brand D')}>
-                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={eyglass} alt="" />
-                    <p className="text-center">Eye Glass</p>
-                </div>
-                <div className="grid " onClick={() => filterByBrand('Brand D')}>
-                <img className="lg:w-16 w-14 hover:border-red-500 rounded-full border-4 p-1 border-lime-500" src={eyglass} alt="" />
-                    <p className="text-center">Eye Glass</p>
-                </div>
             </div>
+           </div>
 
             <div className="">
-                <div className="grid items-center  px-4 py-4 lg:gap-6 gap-3 bg-gray-100 grid-cols-2 lg:grid-cols-3">
+                <div className="grid items-center  px-4  lg:gap-6 gap-3 bg-gray-100 grid-cols-2 lg:grid-cols-3">
                     {loading ? (
                         <span className="loading mx-auto lg:mt-[250px] text-center lg:mt-1/2 lg:ml-80 loading-dots loading-lg"></span>
                     ) : (
                         filteredProducts.length === 0 ? (
-                            <div className="text-center text-red-500 ml-[50px]  mt-4">
+                            <div className="text-center text-red-500  mt-4">
                             Your product cannot be found.
                           </div>
                         ) : (
