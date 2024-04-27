@@ -111,7 +111,7 @@ const SingleProduct = () => {
                         </div>
                     </div>
                 </div>
-                <div>
+                <div className="px-1">
                     <h2 className="text-xl font-bold">Product</h2>
                     <div>
                         Name: <span className=" lg:text-[20px] font-bold text-[14px]"> {product?.name}</span>
@@ -127,7 +127,7 @@ const SingleProduct = () => {
                     </div>
                 </div>
             </div>
-            <form onSubmit={handleSubmit} className="lg:ml-[300px] px-2 w-full pb-6 mb-10">
+            <form onSubmit={handleSubmit} className="lg:ml-[300px] w-11/12 px-2 lg:w-full pb-6 mb-10">
                 <p className="text-orange-400 ">
                     {
                         user ? null : <Link to={'/signup'}>You do not have a account please <span className="underline font-bold">Create Account</span></Link>

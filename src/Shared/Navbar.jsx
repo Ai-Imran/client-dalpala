@@ -34,6 +34,8 @@ const Navbar = () => {
                                 {/* Sidebar content here */}
                                 <NavLink to={'/'}>Home</NavLink>
                                 <NavLink to={'/shops'}>Shop Now</NavLink>
+                                                            
+                                <NavLink to={'/contact'}>Contact Us</NavLink>
                                 <div className="my-6">
                                     {
                                         user ? user?.displayName : <NavLink to={'/login'}>Login</NavLink>
@@ -44,14 +46,13 @@ const Navbar = () => {
                                         user ? <span className='cursor-pointer' onClick={handleLogout}>Logout</span> : <NavLink to={'/signup'}>Create Account</NavLink>
                                     }
                                 </div>
-                                <NavLink to={'/contact'}>Contact Us</NavLink>
 
                             </ul>
                         </div>
                     </div>
                     <Link to={'/'} className='   '>
                         {/* <img className='w-[50px] opacity-65' src={dalpala} alt="dalapla-logo" /> */}
-                        <h1 className=' italic font-serif hover:text-lime-200 lg:text-3xl text-xl'>HomnaeBazar</h1>
+                        <div className=' flex italic font-serif  hover:text-lime-200 lg:text-3xl text-xl'> <span>Homna</span> <span className='inline-block text-yellow-400'> 𝓮</span> <span>Bazar</span> </div>
                     </Link>
 
                 </div>

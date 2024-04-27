@@ -34,7 +34,7 @@ const BuyProduct = () => {
         </div>
       )}
       {showBanglaText && (
-        <p>
+        <p className="mx-1 w-11/12 text-[14px] lg:text-[16px]">
           
           আপনার অর্ডার টি সম্পন্ন হয়েছে। <span className="text-red-400"> যদি এখনই নিতে চান তাহলে নিচের
           দেয়া নাম্বারে কল করুন অথবা ফেসবুকে মেসেজ করুন।</span> <br /> আমরা আপনার অর্ডারটি
@@ -45,31 +45,31 @@ const BuyProduct = () => {
     </div>
            
 
-            <div className="lg:w-1/2 mx-auto min-h-screen">
+            <div className="lg:w-1/2 mx-2 lg:mx-auto min-h-screen">
                 <div>
                     <p>You are already ordered a Product.</p> <p>
                         Please confirm order to <Link className="text-lime-500 underline" to={'/contact'}>contact us</Link>.
                     </p>Payment method like Bkash,Nagod,Roket or Bank your have any confusion  found please  <Link className="text-lime-500 underline" to={'/contact'}>contact us</Link> as soon as possible.
                 </div>
-                <div className="divider divider-success"> OR Contact Us</div>
-                <div className="flex py-3 lg:text-xl">
+                <div className="divider w-11/12 divider-success"> OR Contact Us</div>
+                <div className="flex py-3 w-11/12 lg:text-xl">
                     <span className="flex justify-center items-center gap-3">Mazhroul Hoque <IoArrowForward className="text-green-400 " /> </span>
-                    <div className="flex  ml-4 gap-4">
+                    <div className="flex ml-4 lg:gap-4 gap-2">
                         <span>01740843109</span>
-                        <FaWhatsapp className="text-3xl" />
-                        <a target="_blank" href="https://www.facebook.com/mazharul.hoque.homna?mibextid=ZbWKwL"> <FaFacebook className="text-3xl" /></a>
+                        <FaWhatsapp className="lg:text-3xl" />
+                        <a target="_blank" href="https://www.facebook.com/mazharul.hoque.homna?mibextid=ZbWKwL"> <FaFacebook className="lg:text-3xl" /></a>
 
-                        <MdEmail className="text-3xl" />
+                        <MdEmail className="lg:text-3xl" />
                     </div>
                 </div>
-                <div className="flex py-3 lg:text-xl">
+                <div className="flex w-11/12 py-3 mx-2 lg:text-xl">
                     <span className="flex justify-center items-center gap-3">Md Imran <IoArrowForward className="text-green-400 " /> </span>
                     <div className="flex  ml-4 gap-4">
                         <span>01906951915</span>
-                        <FaWhatsapp className="text-3xl" />
-                        <a target="_blank" href="https://www.facebook.com/imran.chowdhury.90663894"> <FaFacebook className="text-3xl" /></a>
+                        <FaWhatsapp className="lg:text-3xl text-[]" />
+                        <a target="_blank" href="https://www.facebook.com/imran.chowdhury.90663894"> <FaFacebook className="lg:text-3xl" /></a>
 
-                        <MdEmail className="text-3xl" />
+                        <MdEmail className="lg:text-3xl" />
                     </div>
                 </div>
             </div>

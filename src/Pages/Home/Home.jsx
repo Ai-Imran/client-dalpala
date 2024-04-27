@@ -142,7 +142,7 @@ const Home = () => {
                                                         <span className="lg:ml-8 ml-2">Add to</span>
                                                         <FaCartArrowDown className="lg:text-2xl text-xl mr-2 mx-1" />
                                                     </Link>
-                                                    <Link to={`/single-shop/${product._id}`} className="w-1/2 bg-amber-950 py-2 rounded-r text-white">
+                                                    <Link to={`/single-shop/${product._id}`} className="w-1/2  bg-amber-950 py-2 rounded-r text-white">
                                                         Buy Now
                                                     </Link>
                                                 </div>
@@ -155,7 +155,7 @@ const Home = () => {
                     )}
                 </div>
                 {filteredProducts.length > 0 && (
-                    <Link className="block mx-4 bg-indigo-950 lg:w-1/3 mb-3 lg:mx-auto text-white text-center lg:text-[16px] text-[13px] py-2 rounded" to={`/shops`}>Show More</Link>
+                    <Link className="block mx-4 bg-indigo-950 lg:w-1/3 mb-3 mt-1 lg:mx-auto text-white text-center lg:text-[16px] text-[13px] py-2 rounded" to={`/shops`}>Show More</Link>
                 )}
             </div>
         </div>
